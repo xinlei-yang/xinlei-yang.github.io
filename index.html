@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Shuyi's Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-pale-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Shuyi</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-gray">Home</a> 
+    <a href="#News" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-gray">News</a> 
+    <a href="#Publications" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-gray">Publications</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-gray">Services</a> 
+    <a href="#Awards" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-gray">Awards</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Shuyi Ji</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="News">
+    <p class="w3-center"><img src="images/ShuyiJi.png" class="w3-circle" style="height:300px;width:450px" alt="Avatar"></p>
+  <!-- img style="width: 80%;max-width: 320px" alt="profile photo" src="images/ShuyiJi.png" -->
+    <h1 class="w3-jumbo"><b>Shuyi Ji</b></h1>
+    
+        <p>I am a PhD student (since 2019) in School of Software at Tsinghua University, advised by Prof. Yue Gao. Before that, I received my Bachelor’s Degree in School of Software, Tsinghua University. My research focuses on graph signal processing, social computing and recommender system. 
+    </p>
+    <h1 class="w3-xxxlarge w3-text-red"><b>News</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+    <div class="w3-container w3-light-grey w3-padding-32" id="news">
+   	  <p><li> 06/2020, one paper has been accepted by IEEE Transactions on Cybernetics.</li></p>
+      <p><li> 05/2020, one paper has been accepted by <a href="https://www.kdd.org/kdd2020/">KDD 2020</a>.</li></p>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="Publications" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Publications</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h4> Conference Papers:</h4>
+
+    <ol>
+
+      <p>
+      <li><strong>Dual Channel Hypergraph Collaborative Filtering</strong>
+      <br>
+      <strong>Shuyi Ji</strong>, Yifan Feng, Rongrong Ji, Xibin Zhao, Wanwan Tang, Yue Gao
+      <br>
+      <em>KDD</em> 2020
+      </p>
+     </ol>
+     
+      <h4> Journal Papers:</h4>
+
+      <ol>
+
+      <p>
+      <li><strong>Kullback-Leibler Divergence Metric Learning</strong>
+      <br>
+      <strong>Shuyi Ji</strong>, Zizhao Zhang, Shihui Ying, Xibin Zhao, Yue Gao
+      <br>
+      <em>IEEE Transactions on Cybernetics</em>, 2020
+      </p>
+           </ol>
+  </div>
+
+
+  
+  
+  
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+      <div class="w3-container w3-light-grey w3-padding-32" id="service">
+      <p><li> Journal Reviewers of IEEE Transactions on Cybernetics</li></p>
+  </div>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="Awards" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Awards</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p><li> “Academic Promotion Plan” Grant, Tsinghua University, 2018.</li></p>
+    <p><li> Academic Merit Scholarship, Tsinghua University, 2019.</li></p>
+   </div>
+
+ 
+
+  
+  
+  
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
